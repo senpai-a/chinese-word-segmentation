@@ -1,0 +1,29 @@
+程序源代码(可解释运行)
+	comp.py
+	de-seg.py
+	dict.py
+	seg.py
+	#使用方法见说明文档
+	
+说明文档
+	说明文档.txt
+	说明文档.doc
+	#是一样的
+
+语料
+	1998-01-105-带音.txt
+	
+测试数据
+	in.txt	(一个短测试数据)
+	out.txt	(in.txt的正确分词结果)
+	按照说明文档中的测试步骤，使用'1998-01-105-带音.txt'生成测试数据进行测试，seg.py的运行时间比较长。
+	这是一组短的测试数据,可以进行一个快速的测试,使用方法为在控制台下:
+	>python dict.py 1998-01-105-带音.txt dict.txt (使用语料建立词典)
+	>python seg.py dict.txt in.txt (使用刚才建立的词典，对in.txt进行分词。前向最大匹配结果保存在foreward.txt, 后向最大匹配结果保存在backward.txt)
+	>python comp.py out.txt foreward.txt
+	>python comp.py out.txt backward.txt
+	(对两种算法的结果进行评测)
+	
+其他
+	1.bat
+	#在这个文件夹下打开cmd. 真是方便呢。
